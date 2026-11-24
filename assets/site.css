@@ -11,3 +11,28 @@ a{color:#231f20}a:hover{color:#c2530a}
 .card{transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(35,31,32,.12)}
 .lk{color:#231f20;font-weight:600;text-decoration:none;border-bottom:2px solid #f47825;padding-bottom:3px}
 .lk-w{color:#fff}.lk-w:hover{color:#f47825}
+
+.yk-burger{display:none}
+.yk-fab{display:none}
+@media (max-width: 900px){
+.yk-header{position:sticky;top:0;z-index:50}
+.yk-top{display:none}
+.yk-logo{order:1;min-height:60px!important}
+.yk-logo img{height:26px!important}
+.yk-burger{order:2;display:inline-flex;width:44px;height:44px;align-items:center;justify-content:center;background:none;border:0;color:#231f20;cursor:pointer;padding:0}
+.yk-nav{order:3;display:none!important;flex:1 1 100%!important;flex-direction:column;align-items:stretch!important;justify-content:flex-start!important}
+body.yk-open .yk-nav{display:flex!important}
+.yk-nav a{min-height:50px!important;border-top:0!important;border-bottom:1px solid #e4e1de!important}
+.yk-nav a[style*="clip-path"]{justify-content:center;margin:14px 0;border-bottom:0!important}
+h1{font-size:38px!important;line-height:1.08!important}
+h2{font-size:27px!important}
+section{padding-top:44px!important;padding-bottom:44px!important}
+.yk-row{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px!important;padding-bottom:10px;-webkit-overflow-scrolling:touch}
+.yk-row>article{flex:0 0 72%;scroll-snap-align:start}
+.yk-list{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+.yk-list article>div:last-child{padding:12px!important;gap:8px!important}
+.yk-list article h3{font-size:15px!important}
+.yk-list article a.btn{flex:1 1 100%;min-height:40px!important;padding:0 8px!important;font-size:12px!important}
+.yk-list article div{flex-wrap:wrap}
+.yk-fab{display:flex;position:fixed;right:16px;bottom:16px;z-index:60;width:60px;height:60px;border-radius:50%;background:#f47825;color:#231f20;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(35,31,32,.35);text-decoration:none}
+}

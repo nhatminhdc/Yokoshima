@@ -12,10 +12,11 @@
 </head>
 <body>
 <div id="app"></div>
+<a class="yk-fab" href="lai-thu.html" aria-label="Đăng ký lái thử"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="21" r="3.5"></circle><circle cx="23" cy="21" r="3.5"></circle><path d="M10.5 21h9M19 21l-3-11h-4M16 10h4l3 7M9 14h5"></path></svg></a>
 <template id="dc-template">
 <div style="background: #fff">
-<header style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #231f20; background: #fff; border-bottom: 1px solid #e4e1de">
-<div style="background: #231f20; padding: 0 5%">
+<header class="yk-header" style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #231f20; background: #fff; border-bottom: 1px solid #e4e1de">
+<div class="yk-top" style="background: #231f20; padding: 0 5%">
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 28px; align-items: center; justify-content: space-between">
 <nav aria-label="Liên kết phụ" style="display: flex; flex-wrap: wrap; column-gap: 28px">
 <a href="cong-nghe.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Công nghệ</a>
@@ -27,16 +28,17 @@
 </div>
 </div>
 <div style="padding: 0 5%">
-<div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: space-between">
-<nav aria-label="Sản phẩm" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px">
+<div class="yk-bar" style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: space-between">
+<nav aria-label="Sản phẩm" class="yk-nav" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px">
 <a href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid #f47825">Xe máy điện</a>
 <a href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Xe thời trang</a>
 <a href="so-sanh.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">So sánh xe</a>
 </nav>
-<a href="index.html" aria-label="YOKOSHIMA, về trang chủ" style="display: inline-flex; align-items: center; min-height: 76px">
+<a href="index.html" aria-label="YOKOSHIMA, về trang chủ" class="yk-logo" style="display: inline-flex; align-items: center; min-height: 76px">
 <img src="assets/logo-dark.png" alt="YOKOSHIMA" style="height: 34px; display: block">
 </a>
-<nav aria-label="Thương hiệu" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: flex-end">
+<button type="button" class="yk-burger" aria-label="Mở hoặc đóng menu" onclick="document.body.classList.toggle('yk-open')"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 7h20M3 13h20M3 19h20"></path></svg></button>
+<nav aria-label="Thương hiệu" class="yk-nav" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: flex-end">
 <a href="gioi-thieu.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Về Yokoshima</a>
 <a href="cua-hang.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Cửa hàng</a>
 <a href="lai-thu.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; background: #f47825; color: #231f20; font: 700 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)">Đăng ký lái thử</a>
@@ -70,7 +72,7 @@
 </label>
 </div>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 24px">
+<div class="yk-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 24px">
 <sc-for list="{{ bikes }}" as="b" hint-placeholder-count="8">
 <article class="card" style="display: flex; flex-direction: column; background: #fff; border: 1px solid #e4e1de">
 <div style="position: relative">
