@@ -1,0 +1,13 @@
+html{scroll-behavior:smooth}
+img{max-width:100%}
+body{margin:0;font-family:'Be Vietnam Pro',system-ui,sans-serif;color:#231f20;background:#fff}
+a{color:#231f20}a:hover{color:#c2530a}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 30px;box-sizing:border-box;background:#f47825;color:#231f20;font:700 15px 'Chakra Petch','Arial Narrow',sans-serif;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;border:0;cursor:pointer;clip-path:polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%)}
+.btn:hover{background:#ff8d3f;color:#231f20}
+.btn-k{background:#231f20;color:#fff}.btn-k:hover{background:#3a3536;color:#fff}
+.btn-w{background:#fff;color:#231f20}.btn-w:hover{background:#f4f3f1;color:#231f20}
+.ph{display:flex;align-items:center;justify-content:center;box-sizing:border-box;padding:16px;text-align:center;font:500 13px/1.5 'Be Vietnam Pro',system-ui,sans-serif;color:#5e5859;background:repeating-linear-gradient(112deg,#ebe9e6 0 14px,#f4f3f1 14px 28px)}
+.ph-d{color:#c9c4c3;background:repeating-linear-gradient(112deg,#2f2b2c 0 14px,#292526 14px 28px)}
+.card{transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(35,31,32,.12)}
+.lk{color:#231f20;font-weight:600;text-decoration:none;border-bottom:2px solid #f47825;padding-bottom:3px}
+.lk-w{color:#fff}.lk-w:hover{color:#f47825}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tin tức · YOKOSHIMA</title>
+<meta name="description" content="YOKOSHIMA: xe điện cho học sinh, sinh viên. Mang cách sản xuất của người Nhật đến người Việt, với giá của người Việt.">
+<link rel="icon" href="assets/mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Chakra+Petch:ital,wght@0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div id="app"></div>
+<template id="dc-template">
+<div style="background: #fff">
+<header style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #231f20; background: #fff; border-bottom: 1px solid #e4e1de">
+<div style="background: #231f20; padding: 0 5%">
+<div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 28px; align-items: center; justify-content: space-between">
+<nav aria-label="Liên kết phụ" style="display: flex; flex-wrap: wrap; column-gap: 28px">
+<a href="cong-nghe.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Công nghệ</a>
+<a href="ho-tro.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Hỗ trợ &amp; Bảo hành</a>
+<a href="tin-tuc.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Tin tức</a>
+<a href="dai-ly.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Hợp tác đại lý</a>
+</nav>
+<a href="tel:0933191866" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center; color: #fff; font-weight: 600">Hotline: 0933 191 866</a>
+</div>
+</div>
+<div style="padding: 0 5%">
+<div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: space-between">
+<nav aria-label="Sản phẩm" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px">
+<a href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Xe máy điện</a>
+<a href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Xe thời trang</a>
+<a href="so-sanh.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">So sánh xe</a>
+</nav>
+<a href="index.html" aria-label="YOKOSHIMA, về trang chủ" style="display: inline-flex; align-items: center; min-height: 76px">
+<img src="assets/logo-dark.png" alt="YOKOSHIMA" style="height: 34px; display: block">
+</a>
+<nav aria-label="Thương hiệu" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: flex-end">
+<a href="gioi-thieu.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Về Yokoshima</a>
+<a href="cua-hang.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Cửa hàng</a>
+<a href="lai-thu.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; background: #f47825; color: #231f20; font: 700 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)">Đăng ký lái thử</a>
+</nav>
+</div>
+</div>
+</header><section style="background: #231f20; color: #fff; position: relative; overflow: hidden; padding: 64px 5%">
+<img src="assets/mark.png" alt="" aria-hidden="true" style="position: absolute; right: -4%; top: -60px; width: 640px; max-width: none; opacity: 0.1">
+<div style="position: relative; max-width: 1312px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px">
+<div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: #f47825">Tin tức</div>
+<h1 style="margin: 0; font: italic 700 56px/1.05 'Chakra Petch', sans-serif; text-transform: uppercase; text-wrap: balance">Chuyện mới <span style="color: #f47825">từ YOKOSHIMA.</span></h1>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #d6d2d1; max-width: 600px">Khuyến mãi, sự kiện tại cửa hàng và thông tin sản phẩm.</p>
+</div>
+</section>
+<section style="padding: 48px 5% 88px">
+<div style="max-width: 1312px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{ tags }}" as="f" hint-placeholder-count="4">
+<button type="button" aria-pressed="{{ f.on }}" onClick="{{ f.pick }}" style="min-height: 44px; padding: 0 20px; border: 1.5px solid #231f20; font: 600 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer; background: {{ f.bg }}; color: {{ f.fg }}">{{ f.label }}</button>
+</sc-for>
+</div>
+<a href="#" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; text-decoration: none; color: #231f20; background: #f4f3f1">
+<div class="ph" style="flex: 3 1 440px; min-height: 380px; background: repeating-linear-gradient(112deg, #e4e1de 0 14px, #ebe9e6 14px 28px)">[ẢNH BÀI NỔI BẬT]</div>
+<div style="flex: 2 1 340px; display: flex; flex-direction: column; gap: 14px; padding: 32px">
+<div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: #c2530a">Nổi bật · [NGÀY ĐĂNG]</div>
+<h2 style="margin: 0; font: 600 30px/1.3 'Be Vietnam Pro', sans-serif">[Tiêu đề bài viết nổi bật]</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859">[Hai dòng tóm tắt nội dung bài viết.]</p>
+<span class="lk" style="align-self: flex-start">Đọc bài</span>
+</div>
+</a>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 32px 24px">
+<sc-for list="{{ posts }}" as="n" hint-placeholder-count="6">
+<a href="#" style="display: flex; flex-direction: column; gap: 16px; text-decoration: none; color: #231f20">
+<div class="ph" style="aspect-ratio: 16 / 9">[ẢNH BÀI VIẾT]</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: #c2530a; font-size: 12px; letter-spacing: 0.12em">{{ n.tag }} · [NGÀY ĐĂNG]</div>
+<h3 style="margin: 0; font: 600 20px/1.35 'Be Vietnam Pro', sans-serif">[Tiêu đề bài viết {{ n.no }}]</h3>
+</div>
+</a>
+</sc-for>
+</div>
+<nav aria-label="Phân trang" style="display: flex; gap: 8px; justify-content: center">
+<a href="#" aria-current="page" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; background: #231f20; color: #fff; text-decoration: none; font: 700 15px 'Chakra Petch', sans-serif">1</a>
+<a href="#" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #231f20; box-sizing: border-box; text-decoration: none; font: 700 15px 'Chakra Petch', sans-serif">2</a>
+<a href="#" style="width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #231f20; box-sizing: border-box; text-decoration: none; font: 700 15px 'Chakra Petch', sans-serif">3</a>
+</nav>
+</div>
+</section>
+<footer style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; background: #231f20; color: #d6d2d1; padding: 72px 5% 32px">
+<div style="max-width: 1312px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 40px">
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; min-width: 0">
+<img src="assets/logo-light.png" alt="YOKOSHIMA" style="display: block; width: 240px; max-width: 100%; height: auto">
+<p style="margin: 0; font-size: 15px; line-height: 1.6">Mang cách sản xuất của người Nhật đến người Việt, với giá của người Việt.</p>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start">
+<h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Sản phẩm</h2>
+<a href="san-pham-tat-ca.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Xe máy điện</a>
+<a href="san-pham-tat-ca.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Xe thời trang</a>
+<a href="index.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Sản phẩm mới</a>
+<a href="so-sanh.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">So sánh xe</a>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start">
+<h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Về Yokoshima</h2>
+<a href="gioi-thieu.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Câu chuyện thương hiệu</a>
+<a href="tin-tuc.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Tin tức</a>
+<a href="cua-hang.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Hệ thống cửa hàng</a>
+<a href="dai-ly.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Hợp tác đại lý</a>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start">
+<h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Hỗ trợ</h2>
+<a href="ho-tro.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Chính sách bảo hành</a>
+<a href="ho-tro.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Hướng dẫn sử dụng</a>
+<a href="lai-thu.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Đăng ký lái thử</a>
+<a href="ho-tro.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Liên hệ</a>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px">
+<h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Liên hệ</h2>
+<div style="font-size: 15px; line-height: 1.6">[TÊN CÔNG TY]</div>
+<div style="font-size: 15px; line-height: 1.6">MST: [MÃ SỐ THUẾ]</div>
+<div style="font-size: 15px; line-height: 1.6">[ĐỊA CHỈ]</div>
+<div style="font-size: 15px; line-height: 1.6">Hotline: 0933 191 866</div>
+<div style="font-size: 15px; line-height: 1.6">Email: [EMAIL]</div>
+</div>
+</div>
+<div style="border-top: 1px solid #4a4546; padding-top: 24px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; font-size: 14px">
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center"><span>© 2026 YOKOSHIMA</span></div>
+<nav aria-label="Mạng xã hội" style="display: flex; flex-wrap: wrap; column-gap: 28px">
+<a href="#" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">Facebook</a>
+<a href="#" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">TikTok</a>
+<a href="https://zalo.me/0933191866" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">Zalo</a>
+<a href="#" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">YouTube</a>
+</nav>
+</div>
+</div>
+</footer>
+</div>
+</template>
+<script type="text/x-dc" id="dc-logic">
+class Component extends DCLogic {
+  constructor(p){ super(p); this.state = { tag: 'Tất cả' }; }
+  renderVals() {
+    const cur = this.state.tag;
+    const all = [['01', 'Khuyến mãi'], ['02', 'Sự kiện'], ['03', 'Sản phẩm'], ['04', 'Khuyến mãi'], ['05', 'Sự kiện'], ['06', 'Sản phẩm']].map(([no, tag]) => ({ no, tag }));
+    const tags = ['Tất cả', 'Khuyến mãi', 'Sự kiện', 'Sản phẩm'].map((label) => ({
+      label, on: cur === label, bg: cur === label ? '#231f20' : '#ffffff', fg: cur === label ? '#ffffff' : '#231f20',
+      pick: () => this.setState({ tag: label })
+    }));
+    return { tags, posts: cur === 'Tất cả' ? all : all.filter((n) => n.tag === cur) };
+  }
+}
+</script>
+<script src="assets/dc.js"></script>
+</body>
+</html>
