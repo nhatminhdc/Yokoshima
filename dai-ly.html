@@ -24,7 +24,7 @@
 <a href="tin-tuc.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Tin tức</a>
 <a href="dai-ly.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Hợp tác đại lý</a>
 </nav>
-<a href="tel:0933191866" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center; color: #fff; font-weight: 600">Hotline: 0933 191 866</a>
+<a href="tel:{{ S.hotlineRaw }}" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center; color: #fff; font-weight: 600">Hotline: {{ S.hotline }}</a>
 </div>
 </div>
 <div style="padding: 0 5%">
@@ -74,7 +74,7 @@
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px">
 <h2 style="margin: 0; font: 700 44px/1.1 'Chakra Petch', sans-serif; text-transform: uppercase">Đăng ký hợp tác</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859">Bộ phận phát triển đại lý sẽ liên hệ lại sau khi nhận thông tin. Hotline: 0933 191 866</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859">Bộ phận phát triển đại lý sẽ liên hệ lại sau khi nhận thông tin. Hotline: {{ S.hotline }}</p>
 </div>
 <form style="flex: 2 1 480px; min-width: 0; background: #fff; padding: 32px; display: flex; flex-direction: column; gap: 20px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px"><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Họ và tên<input type="text"  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Số điện thoại<input type="tel"  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Email<input type="email"  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Khu vực muốn mở đại lý<input type="text"  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Diện tích mặt bằng (m²)<input type="number"  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Kinh nghiệm kinh doanh xe<dc-select  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"><dc-option>Chưa có</dc-option><dc-option>Dưới 2 năm</dc-option><dc-option>Từ 2 năm trở lên</dc-option></dc-select></label></div>
@@ -88,7 +88,7 @@
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 40px">
 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; min-width: 0">
 <img src="assets/logo-light.png" alt="YOKOSHIMA" style="display: block; width: 240px; max-width: 100%; height: auto">
-<p style="margin: 0; font-size: 15px; line-height: 1.6">Mang cách sản xuất của người Nhật đến người Việt, với giá của người Việt.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.6">{{ S.slogan }}</p>
 </div>
 <div style="display: flex; flex-direction: column; align-items: flex-start">
 <h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Sản phẩm</h2>
@@ -113,11 +113,11 @@
 </div>
 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; overflow-wrap: anywhere">
 <h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Liên hệ</h2>
-<div style="font-size: 15px; line-height: 1.6">Công ty TNHH Quốc Tế Di Chuyển Thông Minh (SMART MOVE CO LTD)</div>
-<div style="font-size: 15px; line-height: 1.6">MST: 0319066372</div>
-<div style="font-size: 15px; line-height: 1.6">Đại diện: Trần Nhật Minh, Giám đốc điều hành</div>
-<div style="font-size: 15px; line-height: 1.6">Hotline: 0933 191 866</div>
-<div style="font-size: 15px; line-height: 1.6">Email: Hoadonvat.gsm@gmail.com</div>
+<div style="font-size: 15px; line-height: 1.6">{{ S.company }}</div>
+<div style="font-size: 15px; line-height: 1.6">MST: {{ S.taxId }}</div>
+<div style="font-size: 15px; line-height: 1.6">Đại diện: {{ S.rep }}</div>
+<div style="font-size: 15px; line-height: 1.6">Hotline: {{ S.hotline }}</div>
+<div style="font-size: 15px; line-height: 1.6">Email: {{ S.email }}</div>
 </div>
 </div>
 <div style="border-top: 1px solid #4a4546; padding-top: 24px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; font-size: 14px">
@@ -125,7 +125,7 @@
 <nav aria-label="Mạng xã hội" style="display: flex; flex-wrap: wrap; column-gap: 28px">
 <a href="#" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">Facebook</a>
 <a href="#" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">TikTok</a>
-<a href="https://zalo.me/0933191866" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">Zalo</a>
+<a href="https://zalo.me/{{ S.zaloRaw }}" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">Zalo</a>
 <a href="#" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">YouTube</a>
 </nav>
 </div>

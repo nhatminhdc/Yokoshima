@@ -1,5 +1,30 @@
 /* Runtime nhỏ: dựng trang từ khuôn mẫu + lớp Component (state, vòng lặp, điều kiện, sự kiện). */
-(function () {
+(async function () {
+  // Nội dung (sản phẩm, cửa hàng, thông tin chung) lấy từ API; nếu không có thì dùng bản gốc đi kèm.
+  async function loadContent() {
+    try { const r = await fetch('/api/content'); if (r.ok) { const j = await r.json(); if (j && j.products) return j; } } catch (e) {}
+    const r = await fetch('data/seed.json'); return r.json();
+  }
+  const C = await loadContent();
+  const SPEC = ['range', 'speed', 'power', 'load', 'battType', 'battCap', 'charge', 'dims', 'weight', 'tire', 'brake', 'light', 'lock', 'warranty'];
+  const products = (C.products || []).filter((p) => p.visible !== false).map((p) => {
+    const q = Object.assign({}, p);
+    SPEC.forEach((k) => { if (!q[k]) q[k] = '—'; });
+    q.badge = q.badge || ''; q.desc = q.desc || ''; q.img = q.img || '';
+    q.noImg = !q.img;
+    q.priceText = q.price ? q.price + ' ₫' : 'Liên hệ';
+    q.sub = q.cat === 'acc' ? q.desc : (q.range !== '—' ? q.range + '/lần sạc · ' : '') + (q.speed !== '—' ? q.speed : '');
+    return q;
+  });
+  const S = Object.assign({}, C.settings || {});
+  S.hotlineRaw = String(S.hotline || '').replace(/\D/g, '');
+  S.zaloRaw = String(S.zalo || S.hotline || '').replace(/\D/g, '');
+  const H = C.home || {};
+  const feat = (id) => products.find((p) => p.id === id) || products[0] || {};
+  const stores = C.stores || [];
+  window.YK = { products, stores, warranty: C.warranty || { rows: [] }, faq: C.faq || [],
+    scope: { S, H, W: C.warranty || { rows: [] }, FAQ: C.faq || [], F0: feat((H.featured || [])[0]), F1: feat((H.featured || [])[1]), N: { stores: stores.length } } };
+
   class DCLogic {
     constructor(props) { this.props = props || {}; this.state = {}; }
     setState(o) {
@@ -85,7 +110,7 @@
     let s0 = null, s1 = null;
     try { s0 = act.selectionStart; s1 = act.selectionEnd; } catch (e) {}
     const frag = document.createDocumentFragment();
-    kids(tpl, inst.renderVals() || {}, frag);
+    kids(tpl, Object.assign({}, window.YK.scope, inst.renderVals() || {}), frag);
     root.replaceChildren(frag);
     if (path) {
       let el = root;

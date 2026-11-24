@@ -24,7 +24,7 @@
 <a href="tin-tuc.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Tin tức</a>
 <a href="dai-ly.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Hợp tác đại lý</a>
 </nav>
-<a href="tel:0933191866" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center; color: #fff; font-weight: 600">Hotline: 0933 191 866</a>
+<a href="tel:{{ S.hotlineRaw }}" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center; color: #fff; font-weight: 600">Hotline: {{ S.hotline }}</a>
 </div>
 </div>
 <div style="padding: 0 5%">
@@ -57,10 +57,10 @@
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px">
 <h2 style="margin: 0; font: 700 44px/1.1 'Chakra Petch', sans-serif; text-transform: uppercase">Chính sách bảo hành</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859">Áp dụng cho lỗi kỹ thuật của nhà sản xuất khi xe còn trong thời hạn và có phiếu bảo hành. Không áp dụng cho hư hỏng do tai nạn, ngập nước, tự ý sửa chữa hoặc hao mòn tự nhiên.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859">{{ W.conditions }}</p>
 </div>
 <div style="flex: 2 1 480px; min-width: 0; border-top: 3px solid #231f20">
-<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #e4e1de; font-size: 15px"><span style="color: #5e5859">Khung xe</span><span style="font-weight: 600">36 tháng</span></div><div style="display: flex; flex-wrap: wrap; gap: 4px 24px; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #e4e1de; font-size: 15px"><span style="color: #5e5859">Động cơ</span><span style="font-weight: 600">24 tháng</span></div><div style="display: flex; flex-wrap: wrap; gap: 4px 24px; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #e4e1de; font-size: 15px"><span style="color: #5e5859">Pin / ắc quy</span><span style="font-weight: 600">16 tháng</span></div><div style="display: flex; flex-wrap: wrap; gap: 4px 24px; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #e4e1de; font-size: 15px"><span style="color: #5e5859">Bộ điều khiển</span><span style="font-weight: 600">24 tháng</span></div><div style="display: flex; flex-wrap: wrap; gap: 4px 24px; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #e4e1de; font-size: 15px"><span style="color: #5e5859">Bộ sạc</span><span style="font-weight: 600">12 tháng</span></div>
+<sc-for list="{{ W.rows }}" as="r" hint-placeholder-count="5"><div style="display: flex; flex-wrap: wrap; gap: 4px 24px; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #e4e1de; font-size: 15px"><span style="color: #5e5859">{{ r.k }}</span><span style="font-weight: 600">{{ r.v }}</span></div></sc-for>
 </div>
 </div>
 </section>
@@ -68,7 +68,7 @@
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
 <h2 style="margin: 0; font: 700 44px/1.1 'Chakra Petch', sans-serif; text-transform: uppercase; flex: 1 1 300px">Câu hỏi thường gặp</h2>
 <div style="flex: 2 1 480px; min-width: 0; border-top: 3px solid #231f20">
-<details style="border-bottom: 1px solid #e4e1de"><summary style="min-height: 64px; display: flex; align-items: center; cursor: pointer; font-size: 17px; font-weight: 600">Sạc xe thế nào cho đúng cách?</summary><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859; padding: 0 0 20px">Dùng bộ sạc chính hãng đi kèm xe và cắm ở nơi khô ráo, thoáng. Nên sạc khi pin còn khoảng 20 đến 30 phần trăm, rút sạc khi đã đầy và không cắm sạc liên tục qua nhiều ngày. Ắc quy Graphene sạc đầy mất khoảng 7 đến 12 giờ tùy mẫu xe.</p></details><details style="border-bottom: 1px solid #e4e1de"><summary style="min-height: 64px; display: flex; align-items: center; cursor: pointer; font-size: 17px; font-weight: 600">Bao lâu thì nên bảo dưỡng xe một lần?</summary><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859; padding: 0 0 20px">Nên mang xe đến cửa hàng kiểm tra khoảng 3 tháng một lần: phanh, lốp, đèn, ốc vít và ắc quy. Nếu nghe tiếng lạ, phanh kém ăn hoặc xe đi được ngắn hơn hẳn mọi khi, hãy mang xe đến sớm hơn.</p></details><details style="border-bottom: 1px solid #e4e1de"><summary style="min-height: 64px; display: flex; align-items: center; cursor: pointer; font-size: 17px; font-weight: 600">Xe có đi được dưới trời mưa không?</summary><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859; padding: 0 0 20px">Có. Xe đi được dưới mưa và trên đường ướt. Không nên đi qua chỗ ngập sâu quá nửa bánh xe. Sau khi đi mưa, lau khô và để xe ráo nước rồi mới cắm sạc.</p></details><details style="border-bottom: 1px solid #e4e1de"><summary style="min-height: 64px; display: flex; align-items: center; cursor: pointer; font-size: 17px; font-weight: 600">Học sinh có cần bằng lái để đi xe không?</summary><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859; padding: 0 0 20px">Xe máy điện có tốc độ thiết kế không quá 50 km/h và công suất không quá 4 kW thì không cần bằng lái, nhưng người lái phải từ đủ 16 tuổi và đội mũ bảo hiểm. Học sinh dưới 16 tuổi chưa được lái xe máy điện.</p></details><details style="border-bottom: 1px solid #e4e1de"><summary style="min-height: 64px; display: flex; align-items: center; cursor: pointer; font-size: 17px; font-weight: 600">Làm sao để kích hoạt bảo hành?</summary><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859; padding: 0 0 20px">Bảo hành được ghi nhận ngay khi mua xe tại cửa hàng YOKOSHIMA: nhân viên điền thông tin xe và ngày mua vào phiếu bảo hành. Bạn giữ phiếu cùng hóa đơn; khi cần bảo hành, mang xe và phiếu đến cửa hàng hoặc gọi hotline 0933 191 866.</p></details>
+<sc-for list="{{ FAQ }}" as="f" hint-placeholder-count="5"><details style="border-bottom: 1px solid #e4e1de"><summary style="min-height: 64px; display: flex; align-items: center; cursor: pointer; font-size: 17px; font-weight: 600">{{ f.q }}</summary><p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859; padding: 0 0 20px">{{ f.a }}</p></details></sc-for>
 </div>
 </div>
 </section>
@@ -76,7 +76,7 @@
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px">
 <h2 style="margin: 0; font: 700 44px/1.1 'Chakra Petch', sans-serif; text-transform: uppercase">Liên hệ</h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859">Hotline: 0933 191 866<br>Email: Hoadonvat.gsm@gmail.com<br>Giờ làm việc: [GIỜ LÀM VIỆC]</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #5e5859">Hotline: {{ S.hotline }}<br>Email: {{ S.email }}<br>Giờ làm việc: [GIỜ LÀM VIỆC]</p>
 </div>
 <form style="flex: 2 1 480px; min-width: 0; background: #fff; padding: 32px; display: flex; flex-direction: column; gap: 20px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px"><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Họ và tên<input type="text"  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Số điện thoại<input type="tel"  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label></div>
@@ -90,7 +90,7 @@
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 40px">
 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; min-width: 0">
 <img src="assets/logo-light.png" alt="YOKOSHIMA" style="display: block; width: 240px; max-width: 100%; height: auto">
-<p style="margin: 0; font-size: 15px; line-height: 1.6">Mang cách sản xuất của người Nhật đến người Việt, với giá của người Việt.</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.6">{{ S.slogan }}</p>
 </div>
 <div style="display: flex; flex-direction: column; align-items: flex-start">
 <h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Sản phẩm</h2>
@@ -115,11 +115,11 @@
 </div>
 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; overflow-wrap: anywhere">
 <h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Liên hệ</h2>
-<div style="font-size: 15px; line-height: 1.6">Công ty TNHH Quốc Tế Di Chuyển Thông Minh (SMART MOVE CO LTD)</div>
-<div style="font-size: 15px; line-height: 1.6">MST: 0319066372</div>
-<div style="font-size: 15px; line-height: 1.6">Đại diện: Trần Nhật Minh, Giám đốc điều hành</div>
-<div style="font-size: 15px; line-height: 1.6">Hotline: 0933 191 866</div>
-<div style="font-size: 15px; line-height: 1.6">Email: Hoadonvat.gsm@gmail.com</div>
+<div style="font-size: 15px; line-height: 1.6">{{ S.company }}</div>
+<div style="font-size: 15px; line-height: 1.6">MST: {{ S.taxId }}</div>
+<div style="font-size: 15px; line-height: 1.6">Đại diện: {{ S.rep }}</div>
+<div style="font-size: 15px; line-height: 1.6">Hotline: {{ S.hotline }}</div>
+<div style="font-size: 15px; line-height: 1.6">Email: {{ S.email }}</div>
 </div>
 </div>
 <div style="border-top: 1px solid #4a4546; padding-top: 24px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; font-size: 14px">
@@ -127,7 +127,7 @@
 <nav aria-label="Mạng xã hội" style="display: flex; flex-wrap: wrap; column-gap: 28px">
 <a href="#" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">Facebook</a>
 <a href="#" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">TikTok</a>
-<a href="https://zalo.me/0933191866" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">Zalo</a>
+<a href="https://zalo.me/{{ S.zaloRaw }}" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">Zalo</a>
 <a href="#" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center; min-height: 44px">YouTube</a>
 </nav>
 </div>
