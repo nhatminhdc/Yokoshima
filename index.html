@@ -112,9 +112,10 @@
 <a href="san-pham-tat-ca.html" class="lk" style="margin-left: 16px">Xem tất cả</a>
 </div>
 </div>
-<div class="yk-row" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 24px">
+<div class="yk-home" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 24px">
 <sc-for list="{{ bikes }}" as="b" hint-placeholder-count="4">
 <article class="card" style="display: flex; flex-direction: column; background: #fff; border: 1px solid #e4e1de">
+<a class="yk-cardlink" href="san-pham.html?id={{ b.id }}" aria-label="{{ b.name }}"></a>
 <div style="position: relative">
 <sc-if value="{{ b.img }}" hint-placeholder-val="{{ true }}">
 <div style="aspect-ratio: 4 / 3; position: relative; background: #f4f3f1"><img src="{{ b.img }}" alt="{{ b.name }}" style="position: absolute; inset: 0; width: 100%; height: 100%; box-sizing: border-box; padding: 5%; object-fit: contain"></div>
@@ -147,9 +148,10 @@
 <h2 style="margin: 0; font: 700 44px/1.1 'Chakra Petch', sans-serif; text-transform: uppercase">Xe thời trang</h2>
 <a href="san-pham-tat-ca.html" class="lk">Xem tất cả</a>
 </div>
-<div class="yk-row" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 24px">
+<div class="yk-home" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr)); gap: 24px">
 <sc-for list="{{ ebikes }}" as="b" hint-placeholder-count="4">
 <article class="card" style="display: flex; flex-direction: column; background: #fff">
+<a class="yk-cardlink" href="san-pham.html?id={{ b.id }}" aria-label="{{ b.name }}"></a>
 <sc-if value="{{ b.img }}" hint-placeholder-val="{{ true }}">
 <div style="aspect-ratio: 4 / 3; position: relative; background: #f4f3f1"><img src="{{ b.img }}" alt="{{ b.name }}" style="position: absolute; inset: 0; width: 100%; height: 100%; box-sizing: border-box; padding: 5%; object-fit: contain"></div>
 </sc-if>
@@ -285,8 +287,8 @@ class Component extends DCLogic {
     }));
     return {
       filters,
-      bikes: (cur === 'all' ? moto : moto.filter((b) => b.line === cur)).slice(0, 4),
-      ebikes: P.filter((b) => b.cat === 'fashion').slice(0, 4)
+      bikes: (cur === 'all' ? moto : moto.filter((b) => b.line === cur)).slice(0, 8),
+      ebikes: P.filter((b) => b.cat === 'fashion').slice(0, 8)
     };
   }
 }

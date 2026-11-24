@@ -36,3 +36,17 @@ section{padding-top:44px!important;padding-bottom:44px!important}
 .yk-list article div{flex-wrap:wrap}
 .yk-fab{display:flex;position:fixed;right:16px;bottom:16px;z-index:60;width:60px;height:60px;border-radius:50%;background:#f47825;color:#231f20;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(35,31,32,.35);text-decoration:none}
 }
+
+.yk-cardlink{display:none}
+@media (max-width: 900px){
+.yk-home{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:6px!important}
+.yk-home article{position:relative}
+.yk-home article:hover{transform:none}
+.yk-home .yk-cardlink{display:block;position:absolute;inset:0;z-index:2}
+.yk-home article>div:last-child{padding:6px!important;gap:4px!important}
+.yk-home article h3{font-size:10px!important;line-height:1.25!important;overflow-wrap:anywhere}
+.yk-home article>div:last-child>div:nth-of-type(1){display:none}
+.yk-home article>div:last-child>div:nth-of-type(2){font-size:10px!important}
+.yk-home article>div:last-child>div:nth-of-type(3){display:none!important}
+.yk-home article span{font-size:7px!important;padding:2px 6px 2px 4px!important;top:4px!important}
+}
