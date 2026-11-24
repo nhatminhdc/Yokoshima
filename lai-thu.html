@@ -15,8 +15,8 @@
 <a class="yk-fab" href="lai-thu.html" aria-label="Đăng ký lái thử"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="21" r="3.5"></circle><circle cx="23" cy="21" r="3.5"></circle><path d="M10.5 21h9M19 21l-3-11h-4M16 10h4l3 7M9 14h5"></path></svg></a>
 <template id="dc-template">
 <div style="background: #fff">
-<header class="yk-header" style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #231f20; background: #fff; border-bottom: 1px solid #e4e1de">
-<div class="yk-top" style="background: #231f20; padding: 0 5%">
+<header class="yk-header" style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: var(--yk-k,#231f20); background: #fff; border-bottom: 1px solid #e4e1de">
+<div class="yk-top" style="background: var(--yk-k,#231f20); padding: 0 5%">
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 28px; align-items: center; justify-content: space-between">
 <nav aria-label="Liên kết phụ" style="display: flex; flex-wrap: wrap; column-gap: 28px">
 <a href="cong-nghe.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Công nghệ</a>
@@ -30,34 +30,34 @@
 <div style="padding: 0 5%">
 <div class="yk-bar" style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: space-between">
 <nav aria-label="Sản phẩm" class="yk-nav" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px">
-<a href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Xe máy điện</a>
-<a href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Xe thời trang</a>
-<a href="so-sanh.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">So sánh xe</a>
+<a data-nav="n0" href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n0 }}</a>
+<a data-nav="n1" href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n1 }}</a>
+<a data-nav="n2" href="so-sanh.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n2 }}</a>
 </nav>
 <a href="index.html" aria-label="YOKOSHIMA, về trang chủ" class="yk-logo" style="display: inline-flex; align-items: center; min-height: 76px">
 <img src="assets/logo-dark.png" alt="YOKOSHIMA" style="height: 34px; display: block">
 </a>
 <button type="button" class="yk-burger" aria-label="Mở hoặc đóng menu" onclick="document.body.classList.toggle('yk-open')"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 7h20M3 13h20M3 19h20"></path></svg></button>
 <nav aria-label="Thương hiệu" class="yk-nav" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: flex-end">
-<a href="gioi-thieu.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Về Yokoshima</a>
-<a href="cua-hang.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Cửa hàng</a>
-<a href="lai-thu.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; background: #f47825; color: #231f20; font: 700 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)">Đăng ký lái thử</a>
+<a data-nav="n3" href="gioi-thieu.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n3 }}</a>
+<a data-nav="n4" href="cua-hang.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n4 }}</a>
+<a data-nav="n5" href="lai-thu.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; background: var(--yk-o,#f47825); color: var(--yk-k,#231f20); font: 700 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)">{{ NAV.n5 }}</a>
 </nav>
 </div>
 </div>
 </header>
-<section style="background: #231f20; color: #fff; position: relative; overflow: hidden; padding: 72px 5%">
+<section style="background: var(--yk-k,#231f20); color: #fff; position: relative; overflow: hidden; padding: 72px 5%">
 <img src="assets/mark.png" alt="" aria-hidden="true" style="position: absolute; left: -8%; bottom: -120px; width: 820px; max-width: none; opacity: 0.08">
 <div style="position: relative; max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
 <div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 24px; padding-top: 24px">
-<div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: #f47825">Đăng ký lái thử</div>
-<h1 style="margin: 0; font: italic 700 56px/1.05 'Chakra Petch', sans-serif; text-transform: uppercase; text-wrap: balance">Ngồi lên xe. <span style="color: #f47825">Tự cảm nhận.</span></h1>
+<div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: var(--yk-o,#f47825)">Đăng ký lái thử</div>
+<h1 style="margin: 0; font: italic 700 56px/1.05 'Chakra Petch', sans-serif; text-transform: uppercase; text-wrap: balance">Ngồi lên xe. <span style="color: var(--yk-o,#f47825)">Tự cảm nhận.</span></h1>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #d6d2d1; max-width: 460px">Để lại thông tin, cửa hàng sẽ gọi lại để hẹn lịch lái thử.</p>
 <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 8px">
-<div style="display: flex; gap: 16px; align-items: center"><span style="font: italic 700 32px/1 'Chakra Petch', sans-serif; color: #f47825; min-width: 48px">01</span><span style="font-size: 17px">Chọn mẫu xe bạn muốn thử</span></div><div style="display: flex; gap: 16px; align-items: center"><span style="font: italic 700 32px/1 'Chakra Petch', sans-serif; color: #f47825; min-width: 48px">02</span><span style="font-size: 17px">Chọn cửa hàng gần bạn</span></div><div style="display: flex; gap: 16px; align-items: center"><span style="font: italic 700 32px/1 'Chakra Petch', sans-serif; color: #f47825; min-width: 48px">03</span><span style="font-size: 17px">Nhận cuộc gọi xác nhận lịch hẹn</span></div>
+<div style="display: flex; gap: 16px; align-items: center"><span style="font: italic 700 32px/1 'Chakra Petch', sans-serif; color: var(--yk-o,#f47825); min-width: 48px">01</span><span style="font-size: 17px">Chọn mẫu xe bạn muốn thử</span></div><div style="display: flex; gap: 16px; align-items: center"><span style="font: italic 700 32px/1 'Chakra Petch', sans-serif; color: var(--yk-o,#f47825); min-width: 48px">02</span><span style="font-size: 17px">Chọn cửa hàng gần bạn</span></div><div style="display: flex; gap: 16px; align-items: center"><span style="font: italic 700 32px/1 'Chakra Petch', sans-serif; color: var(--yk-o,#f47825); min-width: 48px">03</span><span style="font-size: 17px">Nhận cuộc gọi xác nhận lịch hẹn</span></div>
 </div>
 </div>
-<div style="flex: 1 1 480px; min-width: 0; background: #fff; color: #231f20; padding: 36px">
+<div style="flex: 1 1 480px; min-width: 0; background: #fff; color: var(--yk-k,#231f20); padding: 36px">
 <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
 <div role="status" style="display: flex; flex-direction: column; gap: 16px; align-items: flex-start; padding: 48px 0">
 <h2 style="margin: 0; font: 700 32px/1.15 'Chakra Petch', sans-serif; text-transform: uppercase">Đã nhận đăng ký</h2>
@@ -67,17 +67,17 @@
 </sc-if>
 <sc-if value="{{ open }}" hint-placeholder-val="{{ true }}">
 <form onSubmit="{{ submit }}" style="display: flex; flex-direction: column; gap: 20px">
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px"><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Họ và tên<input type="text" required style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Số điện thoại<input type="tel" required style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label></div>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Email (không bắt buộc)<input type="email"  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px"><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Họ và tên<input type="text" required style="min-height: 48px; padding: 0 14px; border: 1.5px solid var(--yk-k,#231f20); border-radius: 0; background: #fff; color: var(--yk-k,#231f20); font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Số điện thoại<input type="tel" required style="min-height: 48px; padding: 0 14px; border: 1.5px solid var(--yk-k,#231f20); border-radius: 0; background: #fff; color: var(--yk-k,#231f20); font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label></div>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Email (không bắt buộc)<input type="email"  style="min-height: 48px; padding: 0 14px; border: 1.5px solid var(--yk-k,#231f20); border-radius: 0; background: #fff; color: var(--yk-k,#231f20); font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"></label>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Mẫu xe muốn lái thử
-<dc-select style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%">
+<dc-select style="min-height: 48px; padding: 0 14px; border: 1.5px solid var(--yk-k,#231f20); border-radius: 0; background: #fff; color: var(--yk-k,#231f20); font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%">
 <sc-for list="{{ models }}" as="m" hint-placeholder-count="4"><dc-option>{{ m.name }}</dc-option></sc-for>
 </dc-select>
 </label>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px"><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Tỉnh / Thành phố<dc-select  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"><dc-option>Chọn tỉnh / thành</dc-option><dc-option>[TỈNH / THÀNH]</dc-option></dc-select></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Quận / Huyện<dc-select  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"><dc-option>Chọn quận / huyện</dc-option><dc-option>[QUẬN / HUYỆN]</dc-option></dc-select></label></div>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Cửa hàng<dc-select  style="min-height: 48px; padding: 0 14px; border: 1.5px solid #231f20; border-radius: 0; background: #fff; color: #231f20; font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"><dc-option>Chọn cửa hàng</dc-option><dc-option>[TÊN CỬA HÀNG]</dc-option></dc-select></label>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 20px"><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Tỉnh / Thành phố<dc-select  style="min-height: 48px; padding: 0 14px; border: 1.5px solid var(--yk-k,#231f20); border-radius: 0; background: #fff; color: var(--yk-k,#231f20); font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"><dc-option>Chọn tỉnh / thành</dc-option><dc-option>[TỈNH / THÀNH]</dc-option></dc-select></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Quận / Huyện<dc-select  style="min-height: 48px; padding: 0 14px; border: 1.5px solid var(--yk-k,#231f20); border-radius: 0; background: #fff; color: var(--yk-k,#231f20); font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"><dc-option>Chọn quận / huyện</dc-option><dc-option>[QUẬN / HUYỆN]</dc-option></dc-select></label></div>
+<label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 500">Cửa hàng<dc-select  style="min-height: 48px; padding: 0 14px; border: 1.5px solid var(--yk-k,#231f20); border-radius: 0; background: #fff; color: var(--yk-k,#231f20); font: 400 16px 'Be Vietnam Pro', sans-serif; box-sizing: border-box; width: 100%"><dc-option>Chọn cửa hàng</dc-option><dc-option>[TÊN CỬA HÀNG]</dc-option></dc-select></label>
 <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; min-height: 44px; cursor: pointer">
-<input type="checkbox" required style="width: 22px; height: 22px; flex: none; accent-color: #f47825">
+<input type="checkbox" required style="width: 22px; height: 22px; flex: none; accent-color: var(--yk-o,#f47825)">
 <span>Tôi đồng ý để YOKOSHIMA liên hệ theo <a href="#">chính sách bảo mật</a>.</span>
 </label>
 <button type="submit" class="btn" style="min-height: 56px">Gửi đăng ký</button>
@@ -86,7 +86,7 @@
 </div>
 </div>
 </section>
-<footer style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; background: #231f20; color: #d6d2d1; padding: 72px 5% 32px">
+<footer style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; background: var(--yk-k,#231f20); color: #d6d2d1; padding: 72px 5% 32px">
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 40px">
 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; min-width: 0">

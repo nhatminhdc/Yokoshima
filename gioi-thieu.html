@@ -15,8 +15,8 @@
 <a class="yk-fab" href="lai-thu.html" aria-label="Đăng ký lái thử"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="21" r="3.5"></circle><circle cx="23" cy="21" r="3.5"></circle><path d="M10.5 21h9M19 21l-3-11h-4M16 10h4l3 7M9 14h5"></path></svg></a>
 <template id="dc-template">
 <div style="background: #fff">
-<header class="yk-header" style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: #231f20; background: #fff; border-bottom: 1px solid #e4e1de">
-<div class="yk-top" style="background: #231f20; padding: 0 5%">
+<header class="yk-header" style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; color: var(--yk-k,#231f20); background: #fff; border-bottom: 1px solid #e4e1de">
+<div class="yk-top" style="background: var(--yk-k,#231f20); padding: 0 5%">
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 28px; align-items: center; justify-content: space-between">
 <nav aria-label="Liên kết phụ" style="display: flex; flex-wrap: wrap; column-gap: 28px">
 <a href="cong-nghe.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Công nghệ</a>
@@ -30,26 +30,26 @@
 <div style="padding: 0 5%">
 <div class="yk-bar" style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: space-between">
 <nav aria-label="Sản phẩm" class="yk-nav" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px">
-<a href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Xe máy điện</a>
-<a href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Xe thời trang</a>
-<a href="so-sanh.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">So sánh xe</a>
+<a data-nav="n0" href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n0 }}</a>
+<a data-nav="n1" href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n1 }}</a>
+<a data-nav="n2" href="so-sanh.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n2 }}</a>
 </nav>
 <a href="index.html" aria-label="YOKOSHIMA, về trang chủ" class="yk-logo" style="display: inline-flex; align-items: center; min-height: 76px">
 <img src="assets/logo-dark.png" alt="YOKOSHIMA" style="height: 34px; display: block">
 </a>
 <button type="button" class="yk-burger" aria-label="Mở hoặc đóng menu" onclick="document.body.classList.toggle('yk-open')"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 7h20M3 13h20M3 19h20"></path></svg></button>
 <nav aria-label="Thương hiệu" class="yk-nav" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: flex-end">
-<a href="gioi-thieu.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid #f47825">Về Yokoshima</a>
-<a href="cua-hang.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: #231f20; text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">Cửa hàng</a>
-<a href="lai-thu.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; background: #f47825; color: #231f20; font: 700 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)">Đăng ký lái thử</a>
+<a data-nav="n3" href="gioi-thieu.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid var(--yk-o,#f47825)">{{ NAV.n3 }}</a>
+<a data-nav="n4" href="cua-hang.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n4 }}</a>
+<a data-nav="n5" href="lai-thu.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; background: var(--yk-o,#f47825); color: var(--yk-k,#231f20); font: 700 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)">{{ NAV.n5 }}</a>
 </nav>
 </div>
 </div>
-</header><section style="background: #231f20; color: #fff; position: relative; overflow: hidden; padding: 64px 5%">
+</header><section style="background: var(--yk-k,#231f20); color: #fff; position: relative; overflow: hidden; padding: 64px 5%">
 <img src="assets/mark.png" alt="" aria-hidden="true" style="position: absolute; right: -4%; top: -60px; width: 640px; max-width: none; opacity: 0.1">
 <div style="position: relative; max-width: 1312px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px">
-<div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: #f47825">Về YOKOSHIMA</div>
-<h1 style="margin: 0; font: italic 700 56px/1.05 'Chakra Petch', sans-serif; text-transform: uppercase; text-wrap: balance">Dynamic <span style="color: #f47825">&amp; Drive.</span></h1>
+<div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: var(--yk-o,#f47825)">Về YOKOSHIMA</div>
+<h1 style="margin: 0; font: italic 700 56px/1.05 'Chakra Petch', sans-serif; text-transform: uppercase; text-wrap: balance">Dynamic <span style="color: var(--yk-o,#f47825)">&amp; Drive.</span></h1>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #d6d2d1; max-width: 600px">Thương hiệu xe điện Nhật Bản dành cho người Việt, với mức giá của người Việt.</p>
 </div>
 </section>
@@ -66,24 +66,24 @@
 <div style="flex: 1 1 420px; min-width: 0"><img src="assets/thuong-hieu.webp" alt="Hình ảnh xe trong đời sống: bãi đỗ xe, bạn trẻ ngồi trên xe, cận cảnh yên xe" style="display: block; width: 100%; height: auto"></div>
 </div>
 </section>
-<section style="background: #231f20; color: #fff; padding: 88px 5%">
+<section style="background: var(--yk-k,#231f20); color: #fff; padding: 88px 5%">
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
 <div style="flex: 1 1 300px; display: flex; justify-content: center">
 <img src="assets/mark.png" alt="Biểu tượng hai chữ D, Dynamic và Drive, của YOKOSHIMA" style="width: 100%; max-width: 400px">
 </div>
 <div style="flex: 2 1 520px; display: flex; flex-direction: column; gap: 32px">
 <div style="display: flex; flex-direction: column; gap: 12px">
-<div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: #f47825">Ý nghĩa logo</div>
+<div style="font: 600 13px 'Chakra Petch', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; color: var(--yk-o,#f47825)">Ý nghĩa logo</div>
 <h2 style="margin: 0; font: italic 700 48px/1.08 'Chakra Petch', sans-serif; text-transform: uppercase">Hai chữ D</h2>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 28px">
-<div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid #f47825; padding-top: 18px">
+<div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid var(--yk-o,#f47825); padding-top: 18px">
 <h3 style="margin: 0; font: 700 22px/1.2 'Chakra Petch', sans-serif; text-transform: uppercase">Dynamic</h3>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #d6d2d1">Năng động, trẻ trung và giàu năng lượng, đúng tinh thần của học sinh, sinh viên.</p>
-</div><div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid #f47825; padding-top: 18px">
+</div><div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid var(--yk-o,#f47825); padding-top: 18px">
 <h3 style="margin: 0; font: 700 22px/1.2 'Chakra Petch', sans-serif; text-transform: uppercase">Drive</h3>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #d6d2d1">Chuyển động và động lực tiến về phía trước. Đường cắt chéo gợi tốc độ và năng lượng điện.</p>
-</div><div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid #f47825; padding-top: 18px">
+</div><div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid var(--yk-o,#f47825); padding-top: 18px">
 <h3 style="margin: 0; font: 700 22px/1.2 'Chakra Petch', sans-serif; text-transform: uppercase">Mắt xích đồng hành</h3>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #d6d2d1">Hai chữ D lồng vào nhau như mắt xích: kết nối, đồng hành và cùng phát triển.</p>
 </div>
@@ -93,24 +93,24 @@
 </section>
 <section style="padding: 88px 5%">
 <div style="max-width: 1312px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 40px">
-<div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid #f47825; padding-top: 18px">
+<div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid var(--yk-o,#f47825); padding-top: 18px">
 <h3 style="margin: 0; font: 700 22px/1.2 'Chakra Petch', sans-serif; text-transform: uppercase">Tầm nhìn</h3>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5e5859">Trở thành thương hiệu xe điện mà học sinh, sinh viên Việt Nam nghĩ đến đầu tiên: chuẩn Nhật trong cách làm, vừa túi tiền trong cách bán.</p>
-</div><div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid #f47825; padding-top: 18px">
+</div><div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid var(--yk-o,#f47825); padding-top: 18px">
 <h3 style="margin: 0; font: 700 22px/1.2 'Chakra Petch', sans-serif; text-transform: uppercase">Sứ mệnh</h3>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5e5859">{{ S.slogan }}</p>
-</div><div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid #f47825; padding-top: 18px">
+</div><div style="display: flex; flex-direction: column; gap: 10px; border-top: 3px solid var(--yk-o,#f47825); padding-top: 18px">
 <h3 style="margin: 0; font: 700 22px/1.2 'Chakra Petch', sans-serif; text-transform: uppercase">Cam kết</h3>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #5e5859">Công bố thông số trung thực. Bảo hành rõ ràng, không điều khoản ẩn. Chăm sóc sau bán tận tâm, đồng hành cùng bạn suốt thời gian dùng xe.</p>
 </div>
 </div>
 </section>
-<section style="background: #f47825; color: #231f20; padding: 56px 5%">
+<section style="background: var(--yk-o,#f47825); color: var(--yk-k,#231f20); padding: 56px 5%">
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 24px; align-items: center; justify-content: space-between">
 <h2 style="margin: 0; font: italic 700 40px/1.1 'Chakra Petch', sans-serif; text-transform: uppercase; text-wrap: balance">Đến cửa hàng và lái thử</h2>
 <a href="lai-thu.html" class="btn btn-k" style="min-height: 56px; padding: 0 40px; font-size: 16px">Đăng ký lái thử</a>
 </div>
-</section><footer style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; background: #231f20; color: #d6d2d1; padding: 72px 5% 32px">
+</section><footer style="font-family: 'Be Vietnam Pro', system-ui, sans-serif; background: var(--yk-k,#231f20); color: #d6d2d1; padding: 72px 5% 32px">
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 40px">
 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px; min-width: 0">

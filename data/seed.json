@@ -1,4 +1,51 @@
 {
+ "theme": {
+  "primary": "#f47825",
+  "dark": "#231f20",
+  "homeCount": 8,
+  "mobileCols": 4,
+  "fab": true,
+  "sections": {
+   "hero": true,
+   "moto": true,
+   "fashion": true,
+   "about": true,
+   "stores": true,
+   "testdrive": true
+  },
+  "nav": [
+   {
+    "id": "n0",
+    "label": "Xe máy điện",
+    "show": true
+   },
+   {
+    "id": "n1",
+    "label": "Xe thời trang",
+    "show": true
+   },
+   {
+    "id": "n2",
+    "label": "So sánh xe",
+    "show": true
+   },
+   {
+    "id": "n3",
+    "label": "Về Yokoshima",
+    "show": true
+   },
+   {
+    "id": "n4",
+    "label": "Cửa hàng",
+    "show": true
+   },
+   {
+    "id": "n5",
+    "label": "Đăng ký lái thử",
+    "show": true
+   }
+  ]
+ },
  "settings": {
   "hotline": "0933 191 866",
   "zalo": "0933 191 866",
@@ -39,6 +86,40 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Dáng cổ điển, động cơ không chổi than, chống nước IP67.",
+   "colors": [
+    {
+     "name": "Đen mờ",
+     "hex": "#231f20",
+     "img": "assets/zh-den-mo.webp"
+    },
+    {
+     "name": "Trắng",
+     "hex": "#ffffff",
+     "img": "assets/zh-trang.webp"
+    },
+    {
+     "name": "Đỏ",
+     "hex": "#b3202a",
+     "img": "assets/zh-do.webp"
+    },
+    {
+     "name": "Ghi sần",
+     "hex": "#8e8f8b",
+     "img": "assets/zh-ghi-san.webp"
+    },
+    {
+     "name": "Xám bạc mờ",
+     "hex": "#b4b7ba",
+     "img": "assets/zh-xam-bac.webp"
+    },
+    {
+     "name": "Xám xi măng",
+     "hex": "#b9c4bd",
+     "img": "assets/zh-xam-xi-mang.webp"
+    }
+   ],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -64,6 +145,9 @@
    "lock": "Khóa cơ, NFC, Bluetooth",
    "warranty": "—",
    "desc": "Kiểu dáng Vespa, mở khóa và tắt mở xe qua điện thoại.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -89,6 +173,9 @@
    "lock": "Khóa cơ, NFC, Bluetooth, remote",
    "warranty": "Đến 5 năm",
    "desc": "Kiểu dáng Vespa, thiết kế tinh gọn.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -114,6 +201,9 @@
    "lock": "NFC, Bluetooth, remote",
    "warranty": "Đến 5 năm",
    "desc": "Thiết kế hiện đại, vành nhôm đúc 5 chấu kép.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -139,6 +229,9 @@
    "lock": "NFC, app điện thoại, remote",
    "warranty": "Đến 5 năm",
    "desc": "Thiết kế cá tính, trẻ trung.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -164,6 +257,9 @@
    "lock": "Khóa cơ, NFC, Bluetooth",
    "warranty": "Đến 5 năm",
    "desc": "Kiểu dáng Vespa, khóa và mở xe qua Bluetooth.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -189,6 +285,9 @@
    "lock": "Khóa cơ, NFC, Bluetooth",
    "warranty": "Đến 5 năm",
    "desc": "Kiểu dáng Vespa thanh lịch.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -214,6 +313,9 @@
    "lock": "—",
    "warranty": "—",
    "desc": "Xe máy điện dáng Vespa.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -239,6 +341,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Kiểu dáng Vespa, đèn xi nhan full LED.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -264,6 +369,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Xe đô thị nhỏ gọn, cốp 12 lít.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -289,6 +397,9 @@
    "lock": "Khóa cơ, remote chống trộm",
    "warranty": "5 năm",
    "desc": "Dáng mạnh mẽ, cá tính.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -314,6 +425,9 @@
    "lock": "Khóa cơ, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Dáng thể thao.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -339,6 +453,9 @@
    "lock": "NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Dáng cổ điển pha hiện đại.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -364,6 +481,9 @@
    "lock": "NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Thiết kế trẻ trung, chống nước IP67.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -389,6 +509,9 @@
    "lock": "NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Thiết kế trẻ trung, mở khóa bằng thẻ NFC.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -414,6 +537,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "—",
    "desc": "Màn hình LED tích hợp NFC, giảm sóc thủy lực.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -439,6 +565,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "—",
    "desc": "Thời trang, nhỏ gọn.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -464,6 +593,9 @@
    "lock": "NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Thời trang, thiết kế mới lạ.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -489,6 +621,9 @@
    "lock": "Khóa cơ, Bluetooth, NFC, remote",
    "warranty": "Đến 5 năm",
    "desc": "Thời trang, trẻ trung.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -514,6 +649,9 @@
    "lock": "NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Hai cấu hình động cơ 240 W và 600 W.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -539,6 +677,9 @@
    "lock": "NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Thiết kế trẻ trung.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -564,6 +705,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "—",
    "desc": "Nhỏ gọn, chở thêm được trẻ nhỏ phía trước.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -589,6 +733,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Trẻ trung, năng động.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -614,6 +761,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Nhỏ gọn, thiết kế nữ tính.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -639,6 +789,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Dáng thể thao, cá tính.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -664,6 +817,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Dáng thể thao cho giới trẻ.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -689,6 +845,9 @@
    "lock": "Khóa cơ, NFC, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Thể thao, màn hình LED tích hợp NFC.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -714,6 +873,9 @@
    "lock": "Khóa cơ, NFC, Bluetooth, remote",
    "warranty": "Đến 5 năm",
    "desc": "Nhỏ gọn, dáng thể thao.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -739,6 +901,9 @@
    "lock": "Khóa cơ, remote chống trộm",
    "warranty": "Đến 5 năm",
    "desc": "Nhỏ gọn, tiết kiệm, hợp với học sinh.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -764,6 +929,9 @@
    "lock": "—",
    "warranty": "Đến 5 năm",
    "desc": "Tay ga 50cc phong cách Vespa cổ điển.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -789,6 +957,9 @@
    "lock": "—",
    "warranty": "—",
    "desc": "Sạc chính hãng Yokoshima 60V 20Ah.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -814,6 +985,9 @@
    "lock": "—",
    "warranty": "—",
    "desc": "Sạc chính hãng Yokoshima 48V 20Ah.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -839,6 +1013,9 @@
    "lock": "—",
    "warranty": "—",
    "desc": "Sạc chính hãng Yokoshima 48V 12Ah.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   },
   {
@@ -864,6 +1041,9 @@
    "lock": "—",
    "warranty": "—",
    "desc": "Ắc quy Graphene 12V 24Ah, nặng 7 kg mỗi bình.",
+   "colors": [],
+   "gallery": [],
+   "options": [],
    "visible": true
   }
  ],

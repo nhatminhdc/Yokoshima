@@ -12,6 +12,9 @@
     SPEC.forEach((k) => { if (!q[k]) q[k] = '—'; });
     q.badge = q.badge || ''; q.desc = q.desc || ''; q.img = q.img || '';
     q.noImg = !q.img;
+    q.colors = (Array.isArray(q.colors) ? q.colors : []).filter((c) => c && c.name);
+    q.gallery = (Array.isArray(q.gallery) ? q.gallery : []).filter((u) => typeof u === 'string' && u);
+    q.options = (Array.isArray(q.options) ? q.options : []).filter((o) => o && o.name);
     q.priceText = q.price ? q.price + ' ₫' : 'Liên hệ';
     q.sub = q.cat === 'acc' ? q.desc : (q.range !== '—' ? q.range + '/lần sạc · ' : '') + (q.speed !== '—' ? q.speed : '');
     return q;
@@ -22,8 +25,19 @@
   const H = C.home || {};
   const feat = (id) => products.find((p) => p.id === id) || products[0] || {};
   const stores = C.stores || [];
-  window.YK = { products, stores, warranty: C.warranty || { rows: [] }, faq: C.faq || [],
-    scope: { S, H, W: C.warranty || { rows: [] }, FAQ: C.faq || [], F0: feat((H.featured || [])[0]), F1: feat((H.featured || [])[1]), N: { stores: stores.length } } };
+  // Giao diện: màu, mục hiển thị, menu.
+  const T = Object.assign({ primary: '#f47825', dark: '#231f20', homeCount: 8, mobileCols: 4, fab: true }, C.theme || {});
+  T.homeCount = Math.min(24, Math.max(1, parseInt(T.homeCount, 10) || 8));
+  T.mobileCols = [2, 3, 4].includes(+T.mobileCols) ? +T.mobileCols : 4;
+  const hex = (v, d) => (/^#[0-9a-f]{6}$/i.test(v || '') ? v : d);
+  const NAV = {}; let tcss = ':root{--yk-o:' + hex(T.primary, '#f47825') + ';--yk-k:' + hex(T.dark, '#231f20') + ';--yk-mcols:' + T.mobileCols + '}';
+  (T.nav || []).forEach((n) => { if (/^n\d+$/.test(n.id)) { NAV[n.id] = n.label || ''; if (n.show === false) tcss += '[data-nav="' + n.id + '"]{display:none!important}'; } });
+  Object.keys(T.sections || {}).forEach((k) => { if (T.sections[k] === false && /^[a-z]+$/.test(k)) tcss += '[data-sec="' + k + '"]{display:none!important}'; });
+  if (T.fab === false) tcss += '.yk-fab{display:none!important}';
+  const st = document.createElement('style'); st.textContent = tcss; document.head.appendChild(st);
+  document.documentElement.classList.add('yk-m' + T.mobileCols);
+  window.YK = { products, stores, theme: T, warranty: C.warranty || { rows: [] }, faq: C.faq || [],
+    scope: { S, H, W: C.warranty || { rows: [] }, FAQ: C.faq || [], F0: feat((H.featured || [])[0]), F1: feat((H.featured || [])[1]), N: { stores: stores.length }, NAV } };
 
   class DCLogic {
     constructor(props) { this.props = props || {}; this.state = {}; }
