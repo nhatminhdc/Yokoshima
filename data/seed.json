@@ -7,44 +7,10 @@
   "fab": true,
   "sections": {
    "hero": true,
-   "moto": true,
-   "fashion": true,
    "about": true,
    "stores": true,
    "testdrive": true
-  },
-  "nav": [
-   {
-    "id": "n0",
-    "label": "Xe máy điện",
-    "show": true
-   },
-   {
-    "id": "n1",
-    "label": "Xe thời trang",
-    "show": true
-   },
-   {
-    "id": "n2",
-    "label": "So sánh xe",
-    "show": true
-   },
-   {
-    "id": "n3",
-    "label": "Về Yokoshima",
-    "show": true
-   },
-   {
-    "id": "n4",
-    "label": "Cửa hàng",
-    "show": true
-   },
-   {
-    "id": "n5",
-    "label": "Đăng ký lái thử",
-    "show": true
-   }
-  ]
+  }
  },
  "settings": {
   "hotline": "0933 191 866",
@@ -56,11 +22,47 @@
   "slogan": "Mang cách sản xuất của người Nhật đến người Việt, với giá của người Việt."
  },
  "home": {
-  "eyebrow": "Xe điện cho học sinh · sinh viên",
-  "title1": "Cùng nhau,",
-  "title2": "đi xa hơn.",
-  "desc": "YOKOSHIMA là thương hiệu xe điện hiện đại, dễ tiếp cận và giàu năng lượng, đồng hành cùng thế hệ trẻ trên mỗi chặng đường.",
-  "heroImg": "assets/xe-zh.webp"
+  "slides": [
+   {
+    "type": "product",
+    "eyebrow": "Xe điện cho học sinh · sinh viên",
+    "title1": "Cùng nhau,",
+    "title2": "đi xa hơn.",
+    "desc": "YOKOSHIMA là thương hiệu xe điện hiện đại, dễ tiếp cận và giàu năng lượng, đồng hành cùng thế hệ trẻ trên mỗi chặng đường.",
+    "img": "assets/xe-zh.webp",
+    "alt": "Yokoshima ZH",
+    "btn1Text": "Khám phá các dòng xe",
+    "btn1Href": "#danh-muc",
+    "btn2Text": "Đăng ký lái thử",
+    "btn2Href": "lai-thu.html"
+   },
+   {
+    "type": "product",
+    "eyebrow": "Chuẩn Nhật cho người Việt",
+    "title1": "Chuẩn Nhật,",
+    "title2": "giá người Việt.",
+    "desc": "Quy trình sản xuất và kiểm tra theo cách của người Nhật, với mức giá phù hợp túi tiền người Việt.",
+    "img": "assets/xe-veras946.webp",
+    "alt": "Yokoshima Veras 946",
+    "btn1Text": "Xem Veras 946",
+    "btn1Href": "san-pham.html?id=veras946",
+    "btn2Text": "Câu chuyện thương hiệu",
+    "btn2Href": "gioi-thieu.html"
+   },
+   {
+    "type": "product",
+    "eyebrow": "Bảo hành khung xe 36 tháng",
+    "title1": "Yên tâm",
+    "title2": "mỗi chặng đường.",
+    "desc": "Khung xe bảo hành 36 tháng, động cơ 24 tháng, cùng hệ thống cửa hàng khắp TP. Hồ Chí Minh.",
+    "img": "assets/xe-mira.webp",
+    "alt": "Yokoshima Mira",
+    "btn1Text": "Chính sách bảo hành",
+    "btn1Href": "ho-tro.html",
+    "btn2Text": "Tìm cửa hàng",
+    "btn2Href": "cua-hang.html"
+   }
+  ]
  },
  "products": [
   {
@@ -1140,5 +1142,196 @@
    "q": "Làm sao để kích hoạt bảo hành?",
    "a": "Bảo hành được ghi nhận ngay khi mua xe tại cửa hàng YOKOSHIMA: nhân viên điền thông tin xe và ngày mua vào phiếu bảo hành. Bạn giữ phiếu cùng hóa đơn; khi cần bảo hành, mang xe và phiếu đến cửa hàng hoặc gọi hotline 0933 191 866."
   }
- ]
+ ],
+ "categories": [
+  {
+   "id": "moto",
+   "name": "Xe máy điện",
+   "home": true,
+   "filters": true,
+   "compare": true
+  },
+  {
+   "id": "fashion",
+   "name": "Xe thời trang",
+   "home": true,
+   "filters": false,
+   "compare": true
+  },
+  {
+   "id": "gas",
+   "name": "Xe 50cc",
+   "home": false,
+   "filters": false,
+   "compare": true
+  },
+  {
+   "id": "acc",
+   "name": "Phụ kiện",
+   "home": false,
+   "filters": false,
+   "compare": false
+  }
+ ],
+ "menu": {
+  "top": [
+   {
+    "label": "Công nghệ",
+    "href": "cong-nghe.html",
+    "children": []
+   },
+   {
+    "label": "Hỗ trợ & Bảo hành",
+    "href": "ho-tro.html",
+    "children": []
+   },
+   {
+    "label": "Tin tức",
+    "href": "tin-tuc.html",
+    "children": []
+   },
+   {
+    "label": "Hợp tác đại lý",
+    "href": "dai-ly.html",
+    "children": []
+   }
+  ],
+  "left": [
+   {
+    "label": "Xe máy điện",
+    "href": "san-pham-tat-ca.html?cat=moto",
+    "children": [
+     {
+      "label": "Dáng Vespa",
+      "href": "san-pham-tat-ca.html?cat=moto&line=Vespa",
+      "children": []
+     },
+     {
+      "label": "Dáng Xmen",
+      "href": "san-pham-tat-ca.html?cat=moto&line=Xmen",
+      "children": []
+     },
+     {
+      "label": "Dáng ZH",
+      "href": "san-pham-tat-ca.html?cat=moto&line=ZH",
+      "children": []
+     },
+     {
+      "label": "Dáng Gogo",
+      "href": "san-pham-tat-ca.html?cat=moto&line=Gogo",
+      "children": []
+     }
+    ]
+   },
+   {
+    "label": "Xe thời trang",
+    "href": "san-pham-tat-ca.html?cat=fashion",
+    "children": [
+     {
+      "label": "Dòng Sport",
+      "href": "san-pham-tat-ca.html?cat=fashion&line=Sport",
+      "children": []
+     },
+     {
+      "label": "Xe 50cc",
+      "href": "san-pham-tat-ca.html?cat=gas",
+      "children": []
+     },
+     {
+      "label": "Phụ kiện",
+      "href": "san-pham-tat-ca.html?cat=acc",
+      "children": []
+     }
+    ]
+   },
+   {
+    "label": "So sánh xe",
+    "href": "so-sanh.html",
+    "children": []
+   }
+  ],
+  "right": [
+   {
+    "label": "Về Yokoshima",
+    "href": "gioi-thieu.html",
+    "children": []
+   },
+   {
+    "label": "Cửa hàng",
+    "href": "cua-hang.html",
+    "children": []
+   },
+   {
+    "label": "Đăng ký lái thử",
+    "href": "lai-thu.html",
+    "children": [],
+    "style": "button"
+   }
+  ],
+  "footer": [
+   {
+    "label": "Sản phẩm",
+    "children": [
+     {
+      "label": "Xe máy điện",
+      "href": "san-pham-tat-ca.html?cat=moto"
+     },
+     {
+      "label": "Xe thời trang",
+      "href": "san-pham-tat-ca.html?cat=fashion"
+     },
+     {
+      "label": "Sản phẩm mới",
+      "href": "index.html"
+     },
+     {
+      "label": "So sánh xe",
+      "href": "so-sanh.html"
+     }
+    ]
+   },
+   {
+    "label": "Về Yokoshima",
+    "children": [
+     {
+      "label": "Câu chuyện thương hiệu",
+      "href": "gioi-thieu.html"
+     },
+     {
+      "label": "Tin tức",
+      "href": "tin-tuc.html"
+     },
+     {
+      "label": "Hệ thống cửa hàng",
+      "href": "cua-hang.html"
+     },
+     {
+      "label": "Hợp tác đại lý",
+      "href": "dai-ly.html"
+     }
+    ]
+   },
+   {
+    "label": "Hỗ trợ",
+    "children": [
+     {
+      "label": "Chính sách bảo hành",
+      "href": "ho-tro.html"
+     },
+     {
+      "label": "Hướng dẫn sử dụng",
+      "href": "ho-tro.html"
+     },
+     {
+      "label": "Đăng ký lái thử",
+      "href": "lai-thu.html"
+     },
+     {
+      "label": "Liên hệ",
+      "href": "ho-tro.html"
+     }
+    ]
+   }
+  ]
+ }
 }

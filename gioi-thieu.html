@@ -19,10 +19,7 @@
 <div class="yk-top" style="background: var(--yk-k,#231f20); padding: 0 5%">
 <div style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 28px; align-items: center; justify-content: space-between">
 <nav aria-label="Liên kết phụ" style="display: flex; flex-wrap: wrap; column-gap: 28px">
-<a href="cong-nghe.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Công nghệ</a>
-<a href="ho-tro.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Hỗ trợ &amp; Bảo hành</a>
-<a href="tin-tuc.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Tin tức</a>
-<a href="dai-ly.html" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">Hợp tác đại lý</a>
+<sc-for list="{{ MENU.top }}" as="m" hint-placeholder-count="4"><a href="{{ m.href }}" target="{{ m.target }}" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center">{{ m.label }}</a></sc-for>
 </nav>
 <a href="tel:{{ S.hotlineRaw }}" style="font-size: 13px; color: #d6d2d1; text-decoration: none; min-height: 40px; display: inline-flex; align-items: center; color: #fff; font-weight: 600">Hotline: {{ S.hotline }}</a>
 </div>
@@ -30,18 +27,27 @@
 <div style="padding: 0 5%">
 <div class="yk-bar" style="max-width: 1312px; margin: 0 auto; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: space-between">
 <nav aria-label="Sản phẩm" class="yk-nav" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px">
-<a data-nav="n0" href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n0 }}</a>
-<a data-nav="n1" href="san-pham-tat-ca.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n1 }}</a>
-<a data-nav="n2" href="so-sanh.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n2 }}</a>
+<sc-for list="{{ MENU.left }}" as="m" hint-placeholder-count="3">
+<div class="yk-mi">
+<sc-if value="{{ m.isBtn }}"><a href="{{ m.href }}" target="{{ m.target }}" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; background: var(--yk-o,#f47825); color: var(--yk-k,#231f20); font: 700 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)">{{ m.label }}</a></sc-if>
+<sc-if value="{{ m.isLink }}"><a href="{{ m.href }}" target="{{ m.target }}" aria-current="{{ m.cur }}" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 6px; border-top: 3px solid transparent; border-bottom: 3px solid {{ m.line }}">{{ m.label }}<svg class="yk-chev" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" style="display: {{ m.chev }}"><path d="M2 4l4 4 4-4"></path></svg></a></sc-if>
+<sc-if value="{{ m.hasKids }}"><div class="yk-sub"><sc-for list="{{ m.children }}" as="c" hint-placeholder-count="3"><a href="{{ c.href }}" target="{{ c.target }}" aria-current="{{ c.cur }}">{{ c.label }}</a></sc-for></div></sc-if>
+</div>
+</sc-for>
 </nav>
 <a href="index.html" aria-label="YOKOSHIMA, về trang chủ" class="yk-logo" style="display: inline-flex; align-items: center; min-height: 76px">
 <img src="assets/logo-dark.png" alt="YOKOSHIMA" style="height: 34px; display: block">
 </a>
 <button type="button" class="yk-burger" aria-label="Mở hoặc đóng menu" onclick="document.body.classList.toggle('yk-open')"><svg aria-hidden="true" width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 7h20M3 13h20M3 19h20"></path></svg></button>
 <nav aria-label="Thương hiệu" class="yk-nav" style="flex: 1 1 300px; display: flex; flex-wrap: wrap; column-gap: 32px; align-items: center; justify-content: flex-end">
-<a data-nav="n3" href="gioi-thieu.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid var(--yk-o,#f47825)">{{ NAV.n3 }}</a>
-<a data-nav="n4" href="cua-hang.html" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; border-top: 3px solid transparent; border-bottom: 3px solid transparent">{{ NAV.n4 }}</a>
-<a data-nav="n5" href="lai-thu.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; background: var(--yk-o,#f47825); color: var(--yk-k,#231f20); font: 700 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)">{{ NAV.n5 }}</a>
+<sc-for list="{{ MENU.right }}" as="m" hint-placeholder-count="3">
+<div class="yk-mi yk-mr">
+<sc-if value="{{ m.isBtn }}"><a href="{{ m.href }}" target="{{ m.target }}" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 24px; background: var(--yk-o,#f47825); color: var(--yk-k,#231f20); font: 700 14px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%)">{{ m.label }}</a></sc-if>
+<sc-if value="{{ m.isLink }}"><a href="{{ m.href }}" target="{{ m.target }}" aria-current="{{ m.cur }}" style="font: 600 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.06em; color: var(--yk-k,#231f20); text-decoration: none; min-height: 76px; box-sizing: border-box; display: inline-flex; align-items: center; gap: 6px; border-top: 3px solid transparent; border-bottom: 3px solid {{ m.line }}">{{ m.label }}<svg class="yk-chev" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" style="display: {{ m.chev }}"><path d="M2 4l4 4 4-4"></path></svg></a></sc-if>
+<sc-if value="{{ m.hasKids }}"><div class="yk-sub"><sc-for list="{{ m.children }}" as="c" hint-placeholder-count="3"><a href="{{ c.href }}" target="{{ c.target }}" aria-current="{{ c.cur }}">{{ c.label }}</a></sc-for></div></sc-if>
+</div>
+</sc-for>
+<sc-for list="{{ MENU.top }}" as="m" hint-placeholder-count="3"><a class="yk-mtop" href="{{ m.href }}" target="{{ m.target }}">{{ m.label }}</a></sc-for>
 </nav>
 </div>
 </div>
@@ -117,27 +123,10 @@
 <img src="assets/logo-light.png" alt="YOKOSHIMA" style="display: block; width: 240px; max-width: 100%; height: auto">
 <p style="margin: 0; font-size: 15px; line-height: 1.6">{{ S.slogan }}</p>
 </div>
-<div style="display: flex; flex-direction: column; align-items: flex-start">
-<h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Sản phẩm</h2>
-<a href="san-pham-tat-ca.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Xe máy điện</a>
-<a href="san-pham-tat-ca.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Xe thời trang</a>
-<a href="index.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Sản phẩm mới</a>
-<a href="so-sanh.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">So sánh xe</a>
-</div>
-<div style="display: flex; flex-direction: column; align-items: flex-start">
-<h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Về Yokoshima</h2>
-<a href="gioi-thieu.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Câu chuyện thương hiệu</a>
-<a href="tin-tuc.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Tin tức</a>
-<a href="cua-hang.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Hệ thống cửa hàng</a>
-<a href="dai-ly.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Hợp tác đại lý</a>
-</div>
-<div style="display: flex; flex-direction: column; align-items: flex-start">
-<h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Hỗ trợ</h2>
-<a href="ho-tro.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Chính sách bảo hành</a>
-<a href="ho-tro.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Hướng dẫn sử dụng</a>
-<a href="lai-thu.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Đăng ký lái thử</a>
-<a href="ho-tro.html" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">Liên hệ</a>
-</div>
+<sc-for list="{{ MENU.footer }}" as="m" hint-placeholder-count="3"><div style="display: flex; flex-direction: column; align-items: flex-start">
+<h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">{{ m.label }}</h2>
+<sc-for list="{{ m.children }}" as="c" hint-placeholder-count="4"><a href="{{ c.href }}" target="{{ c.target }}" style="color: #d6d2d1; text-decoration: none; font-size: 15px; min-height: 32px; display: inline-flex; align-items: center">{{ c.label }}</a></sc-for>
+</div></sc-for>
 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px; min-width: 0; overflow-wrap: anywhere">
 <h2 style="margin: 0 0 8px; font: 700 15px 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.08em; color: #fff">Liên hệ</h2>
 <div style="font-size: 15px; line-height: 1.6">{{ S.company }}</div>
